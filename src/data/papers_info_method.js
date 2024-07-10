@@ -1,4 +1,25 @@
 export default {
+	"AOC: Analysis of Orthologous Collections -- an application for the characterization of natural selection in protein-coding sequences": {
+		"title": "AOC: Analysis of Orthologous Collections -- an application for the characterization of natural selection in protein-coding sequences",
+		"authors": "Alexander Lucaci, Sergei Pond",
+		"publication": "arXiv",
+		"date": "2024",
+		"link": "http://arxiv.org/abs/2406.09522"
+	},
+	"AUTO-TUNE: SELECTING THE DISTANCE THRESHOLD FOR INFERRING HIV TRANSMISSION CLUSTERS": {
+		"title": "AUTO-TUNE: SELECTING THE DISTANCE THRESHOLD FOR INFERRING HIV TRANSMISSION CLUSTERS",
+		"authors": "Steven Weaver, Vanessa Dávila-Conn, Daniel Ji, Hannah Verdonk, Santiago Ávila-Ríos, Andrew J. Leigh Brown, Joel O. Wertheim, Sergei L. Kosakovsky Pond",
+		"publication": "bioRxiv",
+		"date": "2024",
+		"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10979987/"
+	},
+	"Evolutionary shortcuts via multinucleotide substitutions and their impact on natural selection analyses": {
+		"title": "Evolutionary shortcuts via multinucleotide substitutions and their impact on natural selection analyses",
+		"authors": "Alexander G. Lucaci, Jordan D. Zehr, David Enard, Joseph W. Thornton, Sergei L. Kosakovsky Pond",
+		"publication": "Molecular Biology and Evolution",
+		"date": "2023",
+		"link": "https://academic.oup.com/mbe/article-abstract/40/7/msad150/7217158"
+	},
 	"Weak selection on synonymous codons substantially inflates dN/dS estimates in bacteria":{"title":"Weak selection on synonymous codons substantially inflates dN/dS estimates in bacteria","authors":"Shakibur Rahman, Sergei L. Kosakovsky Pond, Andrew Webb, Jody Hey","publication":"Proceedings of the National Academy of Sciences","date":"2021","link":"https://www.pnas.org/doi/abs/10.1073/pnas.2023575118"},
 	"TopHap: rapid inference of key phylogenetic structures from common haplotypes in large genome collections with limited diversity":{"title":"TopHap: rapid inference of key phylogenetic structures from common haplotypes in large genome collections with limited diversity","authors":"Marcos A Caraballo-Ortiz, Sayaka Miura, Maxwell Sanderford, Tenzin Dolker, Qiqing Tao, Steven Weaver, Sergei L K Pond, Sudhir Kumar","publication":"Bioinformatics","date":"2022","link":"https://doi.org/10.1093/bioinformatics/btac186"},
   "Extra base hits": {

@@ -1,4 +1,53 @@
 export default {
+	"The timing of HIV-1 infection of cells that persist on therapy is not strongly influenced by replication competency or cellular tropism of the provirus": {
+		"title": "The timing of HIV-1 infection of cells that persist on therapy is not strongly influenced by replication competency or cellular tropism of the provirus",
+		"authors": "Sarah B. Joseph, Melissa-Rose Abrahams, Matthew Moeser, Lynn Tyers, Nancie M. Archin, Olivia D. Council, Amy Sondgeroth, Ean Spielvogel, Ann Emery, Shuntai Zhou",
+		"publication": "PLoS Pathogens",
+		"date": "2024",
+		"link": "https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1011974"
+	},
+	"Molecular modeling and phylogenetic analyses highlight the role of amino acid 347 of the N1 subtype neuraminidase in influenza virus host range and interspecies adaptation": {
+		"title": "Molecular modeling and phylogenetic analyses highlight the role of amino acid 347 of the N1 subtype neuraminidase in influenza virus host range and interspecies adaptation",
+		"authors": "Stefano Elli, Giuseppina Raffaini, Marco Guerrini, Sergei Kosakovsky Pond, Mikhail Matrosovich",
+		"publication": "Frontiers in Microbiology",
+		"date": "2023",
+		"link": "https://www.frontiersin.org/articles/10.3389/fmicb.2023.1309156/full"
+	},
+	"Recommendations on data sharing in HIV drug resistance research": {
+		"title": "Recommendations on data sharing in HIV drug resistance research",
+		"authors": "Seth C. Inzaule, Mark J. Siedner, Susan J. Little, Santiago Avila-Rios, Alisen Ayitewala, Ronald J. Bosch, Vincent Calvez, Francesca Ceccherini-Silberstein, Charlotte Charpentier, Diane Descamps",
+		"publication": "PLoS Medicine",
+		"date": "2023",
+		"link": "https://journals.plos.org/PLoSmedicine/article?id=10.1371/journal.pmed.1004293"
+	},
+	"Antigen pressure from two founder viruses induces multiple insertions at a single antibody position to generate broadly neutralizing HIV antibodies": {
+		"title": "Antigen pressure from two founder viruses induces multiple insertions at a single antibody position to generate broadly neutralizing HIV antibodies",
+		"authors": "Collin Joyce, Sasha Murrell, Ben Murrell, Oluwarotimi Omorodion, Lorena S. Ver, Nancy Carrico, Raiza Bastidas, Rebecca Nedellec, Michael Bick, Jordan Woehl",
+		"publication": "PLoS Pathogens",
+		"date": "2023",
+		"link": "https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1011416"
+	},
+	"Identification of evolutionary trajectories shared across human betacoronaviruses": {
+		"title": "Identification of evolutionary trajectories shared across human betacoronaviruses",
+		"authors": "Marina Escalera-Zamudio, Sergei L. Kosakovsky Pond, Natalia Martínez de la Viña, Bernardo Gutiérrez, Rhys PD Inward, Julien Thézé, Lucy van Dorp, Hugo G. Castelán-Sánchez, Thomas A. Bowden, Oliver G. Pybus",
+		"publication": "Genome Biology and Evolution",
+		"date": "2023",
+		"link": "https://academic.oup.com/gbe/article-abstract/15/6/evad076/7176137"
+	},
+	"HIV-1 group M capsid amino acid variability: Implications for sequence quality control of genotypic resistance testing": {
+		"title": "HIV-1 group M capsid amino acid variability: Implications for sequence quality control of genotypic resistance testing",
+		"authors": "Kaiming Tao, Soo-Yon Rhee, Philip L. Tzou, Zachary A. Osman, Sergei L. Kosakovsky Pond, Susan P. Holmes, Robert W. Shafer",
+		"publication": "Viruses",
+		"date": "2023",
+		"link": "https://www.mdpi.com/1999-4915/15/4/992"
+	},
+	"Natural selection differences detected in key protein domains between non-pathogenic and pathogenic feline coronavirus phenotypes": {
+		"title": "Natural selection differences detected in key protein domains between non-pathogenic and pathogenic feline coronavirus phenotypes",
+		"authors": "Jordan D. Zehr, Sergei L. Kosakovsky Pond, Jean K. Millet, Ximena A. Olarte-Castillo, Alexander G. Lucaci, Stephen D. Shank, Kristina M. Ceres, Annette Choi, Gary R. Whittaker, Laura B. Goodman",
+		"publication": "Virus Evolution",
+		"date": "2023",
+		"link": "https://academic.oup.com/ve/article-abstract/9/1/vead019/7078204"
+	},
 	"The evolution of BDNF is defined by strict purifying selection and prodomain spatial coevolution, but what does it mean for human brain disease?":{"title":"The evolution of BDNF is defined by strict purifying selection and prodomain spatial coevolution, but what does it mean for human brain disease?","authors":"Alexander G. Lucaci, Michael J. Notaras, Sergei L. Kosakovsky Pond, Dilek Colak","publication":"Translational Psychiatry","date":"2022","link":"https://www.nature.com/articles/s41398-022-02021-w"},
 	"Human HspB1, HspB3, HspB5 and HspB8: Shaping these disease factors during vertebrate evolution":{"title":"Human HspB1, HspB3, HspB5 and HspB8: Shaping these disease factors during vertebrate evolution","authors":"Rainer Benndorf, Ryan Velazquez, Jordan D. Zehr, Sergei L. Kosakovsky Pond, Jody L. Martin, Alexander G. Lucaci","publication":"Cell Stress and Chaperones","date":"2022","link":"https://doi.org/10.1007/s12192-022-01268-y"},
 	"Recent Zoonotic Spillover and Tropism Shift of a Canine Coronavirus Is Associated with Relaxed Selection and Putative Loss of Function in NTD Subdomain of Spike Protein":{"title":"Recent Zoonotic Spillover and Tropism Shift of a Canine Coronavirus Is Associated with Relaxed Selection and Putative Loss of Function in NTD Subdomain of Spike Protein","authors":"Jordan D. Zehr, Sergei L. Kosakovsky Pond, Darren P. Martin, Kristina Ceres, Gary R. Whittaker, Jean K. Millet, Laura B. Goodman, Michael J. Stanhope","publication":"Viruses","date":"2022","link":"https://www.mdpi.com/1999-4915/14/5/853"},
