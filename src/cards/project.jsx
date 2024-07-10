@@ -6,7 +6,7 @@ class Project extends Component {
     return(
 			<li className="media project-media">
         <a href={this.props.links.website} >
-          <img className="mr-3" style={{maxWidth:"65px"}} src={this.props.image} alt="Card image cap" />
+          <img className="mr-3" style={{maxWidth:"65px"}} src={this.props.image} alt="" />
         </a>
 				<div className="media-body">
           <a href={this.props.links.website} >

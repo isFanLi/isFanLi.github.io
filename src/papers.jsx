@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Paper from './cards/paper.jsx';
 // import papersInfo from './data/papers_info.js'
 
 class Papers extends Component {

@@ -8,7 +8,7 @@ class Projects extends Component {
   getProjects = (tag) => {
     let projectsList = [];
     for (var key in projectsInfo) {
-      if (projectsInfo[key].tag == tag) {
+      if (projectsInfo[key].tag === tag) {
         projectsList.push(
           <Project
             image={projectsInfo[key].image}

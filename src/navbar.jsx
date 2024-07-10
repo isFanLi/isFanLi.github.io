@@ -6,11 +6,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  NavLink} from 'reactstrap';
 
 export default class NavBar extends React.Component {
   constructor(props) {
@@ -30,7 +26,7 @@ export default class NavBar extends React.Component {
     return (
       <div>
         <Navbar className="fixed-top" style={{backgroundColor:"#2b328e"}} expand="md">
-          <NavbarBrand href="/"><img src={'/logo.svg'} /> ACME</NavbarBrand>
+          <NavbarBrand href="/"><img alt="" src={'/logo.svg'} /> ACME</NavbarBrand>
           <NavbarToggler onClick={this.toggle} className="fas fa-bars" style={{padding: "0px", width: "25px", height: "25px" }} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>

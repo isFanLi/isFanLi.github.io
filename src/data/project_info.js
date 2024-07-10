@@ -6,7 +6,6 @@ import Datamonkeyimg from './images/projects/Datamonkey.jpeg';
 import Phylotreeimg from './images/projects/Phylotree.jpeg';
 import Alignmentimg from './images/projects/Alignment.jpeg';
 import Hivngsimg from './images/projects/HIVNGS.jpeg';
-import COVIDimg from './images/projects/CovidDash.jpeg';
 
 
 export default {

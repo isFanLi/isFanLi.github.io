@@ -1,11 +1,6 @@
 // Unpixelated images.
 import Sergeiimg from './images/members/Sergei.jpeg';
 import Stevenimg from './images/members/Steven.jpeg';
-import Stephenimg from './images/members/Stephen.jpeg';
-import Jordanimg from './images/members/Jordan.jpeg';
-// import Stellaimg from './images/members/Stella.jpeg';
-// import Sadieimg from './images/members/Sadie.jpeg';
-import Aleximg from './images/members/Alex.jpeg';
 import Hannahimg from './images/members/Hannah.jpeg';
 import HVimg from './images/members/HV.jpg';
 import Averyimg from './images/members/Avery.jpeg';
@@ -13,9 +8,6 @@ import Averyimg from './images/members/Avery.jpeg';
 // pixelated images.
 import SergeiimgPixelated from './images/members/pixelated/Sergei.jpg';
 import StevenimgPixelated from './images/members/pixelated/Steven.jpg';
-import StephenimgPixelated from './images/members/pixelated/Stephen.jpg';
-import BrittanyimgPixelated from './images/members/pixelated/Brittany.jpg';
-import JordanimgPixelated from './images/members/pixelated/Jordan.jpg';
 
 
 export default {
@@ -43,38 +35,6 @@ export default {
       "linkedin": "https://www.linkedin.com/in/steven-weaver-6308a59/",
       "website": "http://www.stevenweaver.org/",
       "googlescholar": "https://scholar.google.com/citations?user=A2ImcaUAAAAJ&hl=en&authuser=1"
-    }
-  },
-  "Stephen": {
-    "name": "Stephen Shank",
-    "title": "Software Developer",
-    "image": Stephenimg,
-    "imagePixelated": StephenimgPixelated,
-    "links": {
-      "twitter": "https://twitter.com/StephenShank",
-      "github": "https://github.com/stephenshank",
-      "linkedin": "https://www.linkedin.com/in/stephen-shank-8568a459/",
-      "website": "http://www.stephenshank.com/",
-      "googlescholar": "https://scholar.google.com/citations?user=5uLYvV0AAAAJ&hl=en"
-    }
-  },
-  "Jordan": {
-    "name": "Jordan Zehr",
-    "title": "Doctoral Student",
-    "image": Jordanimg,
-    "imagePixelated": JordanimgPixelated,
-    "links": {
-      "github": "https://github.com/jzehr"
-    }
-  },
-  "Alex": {
-    "name": "Alexander Lucaci",
-    "title": "Doctoral Student",
-    "image": Aleximg,
-    "links": {
-      "github": "https://github.com/aglucaci",
-      "linkedin": "https://www.linkedin.com/in/alexander-lucaci-0b305743/",
-      "googlescholar": "https://scholar.google.com/citations?user=WH0vTrwAAAAJ&hl=en&oi=ao"
     }
   },
   "Hannah": {

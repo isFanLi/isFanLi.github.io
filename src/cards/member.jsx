@@ -39,7 +39,7 @@ class Member extends Component {
       >
         <div id="membersImage">
           {/*<img className="card-img-top pixelated" src={this.props.imagePixelated} alt="Card image cap" />*/}
-          <img className="card-img-top unpixelated" src={this.props.image} alt="Card image cap" />
+          <img className="card-img-top unpixelated" alt="" src={this.props.image} />
         </div>
         <div className="card-body">
           <p className="card-title">{this.props.name}<span className="blink_me">|</span></p>
