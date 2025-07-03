@@ -1,0 +1,1175 @@
+/* Create by gaojiye */
+@charset "utf-8";
+/*通用样式ͨ*/
+body,ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd {
+    margin:0;
+    padding:0;
+}
+ul, li{
+    list-style: none;
+}
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+body{
+    background: #040f3c;
+}
+
+.header{
+    height: 80px;
+    position: relative;
+    padding-top: 13px;
+    font-size: 36px;
+    color: #00ffff;
+    text-align: center;
+    background: url(../bg.png) top center no-repeat;
+}
+.header a.a-access{
+  position: absolute;
+    right: 3%;
+    top: -18%;
+}
+.main {
+    padding: 0 30px 30px;
+}
+.main-left,
+.main-right {
+    float: left;
+    width: 28%;
+    padding: 0 10px;
+}
+.main-middle {
+    float: left;
+    width: 44%;
+    padding: 0 10px;
+}
+.border-container {
+    position: relative;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,.15);
+    box-shadow: inset 0 0 50px rgba(255,255,255,.1),0 0 5px rgba(0,0,0,.3);
+}
+
+.border-container span.border-span {
+    display: block;
+    position: absolute;
+    width:15px;
+    height: 15px; opacity: .5
+}
+
+.border-container span.top-left {
+    top: -2px;
+    left:-2px;
+    border-top: 2px solid #54dcf2;
+    border-left: 2px solid #54dcf2;
+}
+
+.border-container span.top-right {
+    top:-2px;
+    right:-2px;
+    border-top: 2px solid #54dcf2;
+    border-right:2px solid #54dcf2;
+}
+
+.border-container span.bottom-left {
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid #54dcf2;
+    border-left: 2px solid #54dcf2;
+}
+
+.border-container span.bottom-right {
+    bottom: -2px;
+    right: -2px;
+    border-bottom: 2px solid #54dcf2;
+    border-right: 2px solid #54dcf2;
+}
+.name-title{
+    font-size:16px; font-weight: bolder;
+    color: #00ffff;
+
+}
+
+.construction-monitor-title {
+    margin: 5px 0;
+    padding: 5px 0;
+}
+
+#radar{
+    height: 275px;
+}
+#dormitorydetail{
+    height: 135px;
+}
+#graduateyear{
+    height: 192px;
+}
+.three-pie{
+    border-top: 1px solid rgba(255,255,255,.1);
+    margin: -10px;
+    margin-top: 10px;
+}
+.teacher-pie{
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    margin: -10px;
+    margin-bottom: 0;
+}
+.three-pie li,
+.teacher-pie li{
+    float: left;
+    width: 50%;
+    border-right: 1px solid rgba(255,255,255,.1);
+}
+.teacher-pie li .name-title{
+    padding-left:10px ;
+    padding-top:10px ;
+}
+.three-pie li:last-child,
+.teacher-pie li:last-child{
+    border-right: none;
+}
+#sexrate,
+#nationarate,
+#householdrate{
+    height: 266px;
+}
+#mapadd{
+    height: 279px;
+}
+.number-show{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+.number-show span.span-name{
+    font-size:14px ;
+    color:#fffd51 ;
+}
+.number-show span.span-number-show{
+    font-size:18px ;
+    color:#54b5b5 ;
+    font-style: italic;
+}
+.number-show li{
+    line-height: 25px;
+}
+#teacherrate,
+#courserate,
+#professionrate{
+    height: 160px;
+}
+#agelist{
+    height: 130px;
+}
+#changedetail{
+    height: 229px;
+}
+.table-kingdargen{
+    margin-top: 6px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.table-kingdargen>thead>tr>th{
+    border-bottom: 1px solid #0f4075;
+    padding: 2px 8px;
+    text-align: center;
+    color: #419aff;
+    font-size: 12px;
+    font-weight: normal;
+    border-top: 1px solid #0f4075!important;
+}
+.table-kingdargen tbody tr td{
+    padding: 1px 8px;
+    font-size: 12px;
+    border: none;
+    color: #fff;
+}
+.table-kingdargen tbody tr:nth-child(2n){
+    background: #1d2a42;
+}
+.table-kingdargen tbody tr:hover{
+    background: #1d2a42;
+}
+.table-kingdargen tbody tr td:nth-child(2){
+    color: #e9aa00;
+}
+.table-kingdargen tbody tr td:nth-child(3){
+    color: #53bf18;
+}
+.table-kingdargen tbody tr td:nth-child(4){
+    color: #f9504a;
+}
+.table-kingdargen tbody tr td:nth-child(5){
+    color: #12f0e9;
+}
+#juniorservice{
+    height: 190px;
+}
+#edubalance{
+    height: 203px;
+}
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+* {
+  box-sizing: border-box;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+}
+.copyright a {
+  text-decoration: none;
+  color: #16a085;
+}
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  position: relative;
+  padding: 0.5em 1.5em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  margin: 1em 0.8em;
+}
+.button.type1 {
+  color: #00ffff;
+}
+.button.type1.type1::after, .button.type1.type1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 2px solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;
+}
+.button.type1.type1::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #566473;
+  border-right-color: #566473;
+}
+.button.type1.type1::before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #566473;
+  border-left-color: #566473;
+}
+.button.type1.type1:hover:after, .button.type1.type1:hover:before {
+  width: 100%;
+  height: 100%;
+}
+
+/* 3D摊铺场景样式 */
+.paving-3d-scene {
+    height: 229px;
+    position: relative;
+    perspective: 1200px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    border-radius: 8px;
+    transform: rotateX(45deg) rotateZ(-5deg);
+    transform-style: preserve-3d;
+}
+
+/* 澳门地形基础 */
+.macao-terrain {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(ellipse 80% 40% at 30% 70%, #2d5016 0%, #1a3d0f 50%, #0f2a08 100%),
+        radial-gradient(ellipse 60% 30% at 70% 60%, #1e4b6b 0%, #0f2d4a 70%, #061a2e 100%),
+        linear-gradient(45deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
+    border-radius: 8px;
+}
+
+/* 澳门半岛 */
+.macao-peninsula {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 60%;
+    height: 40px;
+    background: 
+        radial-gradient(ellipse 80% 60% at 50% 50%, #8B4513 0%, #654321 50%, #3e2723 100%);
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* 氹仔岛 */
+.taipa-island {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    width: 25%;
+    height: 25px;
+    background: 
+        radial-gradient(ellipse 70% 50% at 50% 50%, #A0522D 0%, #8B4513 50%, #654321 100%);
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+/* 路氹城填海区 */
+.cotai-reclamation {
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+    width: 20%;
+    height: 20px;
+    background: 
+        radial-gradient(ellipse 60% 40% at 50% 50%, #CD853F 0%, #A0522D 50%, #8B4513 100%);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* 珠江水域 */
+.pearl-river {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: 
+        linear-gradient(90deg, 
+            #1e3a8a 0%, 
+            #3b82f6 20%, 
+            #60a5fa 40%, 
+            #3b82f6 60%, 
+            #1e3a8a 80%, 
+            #1e40af 100%);
+    animation: riverFlow 4s ease-in-out infinite;
+}
+
+/* 建筑群 */
+.buildings {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    pointer-events: none;
+}
+
+.building {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(180deg, #4a5568 0%, #2d3748 50%, #1a202c 100%);
+    border-radius: 2px 2px 0 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.building-1 {
+    left: 10%;
+    width: 8px;
+    height: 40px;
+}
+
+.building-2 {
+    left: 20%;
+    width: 6px;
+    height: 35px;
+}
+
+.building-3 {
+    left: 30%;
+    width: 10px;
+    height: 50px;
+}
+
+.building-4 {
+    left: 45%;
+    width: 12px;
+    height: 45px;
+}
+
+.building-5 {
+    left: 60%;
+    width: 8px;
+    height: 38px;
+}
+
+.building-6 {
+    left: 75%;
+    width: 9px;
+    height: 42px;
+}
+
+.building-7 {
+    left: 85%;
+    width: 7px;
+    height: 36px;
+}
+
+/* 澳门塔 */
+.macao-tower {
+    position: absolute;
+    top: 10px;
+    left: 35%;
+    width: 4px;
+    height: 55px;
+    background: linear-gradient(180deg, #e53e3e 0%, #c53030 50%, #9b2c2c 100%);
+    border-radius: 2px 2px 0 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.macao-tower::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -1px;
+    width: 6px;
+    height: 6px;
+    background: #fbbf24;
+    border-radius: 50%;
+    animation: towerLight 2s ease-in-out infinite;
+}
+
+/* 摊铺机（遥感视角） */
+.paving-machine-remote {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%) scale(0.8);
+    animation: machineMoveRemote 10s ease-in-out infinite;
+}
+
+.machine-body-remote {
+    width: 20px;
+    height: 12px;
+    background: linear-gradient(45deg, #2d3748, #4a5568);
+    border-radius: 3px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.machine-body-remote::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    width: 16px;
+    height: 3px;
+    background: linear-gradient(90deg, #e53e3e, #f56565);
+    border-radius: 2px;
+    animation: engineGlowRemote 1.5s ease-in-out infinite alternate;
+}
+
+.machine-cabin-remote {
+    position: absolute;
+    top: -6px;
+    left: 4px;
+    width: 8px;
+    height: 5px;
+    background: linear-gradient(45deg, #3182ce, #2b6cb0);
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.machine-arm-remote {
+    position: absolute;
+    top: 2px;
+    right: -8px;
+    width: 6px;
+    height: 2px;
+    background: linear-gradient(45deg, #718096, #4a5568);
+    border-radius: 1px;
+    animation: armSwingRemote 3s ease-in-out infinite;
+}
+
+.machine-hopper-remote {
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    width: 4px;
+    height: 4px;
+    background: linear-gradient(45deg, #ed8936, #dd6b20);
+    border-radius: 1px;
+    animation: hopperVibrateRemote 0.8s ease-in-out infinite;
+}
+
+/* 摊铺路面 */
+.paving-road {
+    position: absolute;
+    bottom: 25px;
+    left: 25%;
+    width: 50%;
+    height: 8px;
+    background: linear-gradient(90deg, 
+        #2d3748 0%, 
+        #4a5568 20%, 
+        #2d3748 40%, 
+        #4a5568 60%, 
+        #2d3748 80%, 
+        #4a5568 100%);
+    border-radius: 4px;
+    animation: asphaltFlowRemote 5s linear infinite;
+}
+
+.paving-effect-remote {
+    position: absolute;
+    bottom: 25px;
+    left: 35%;
+    width: 30%;
+    height: 8px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(237, 137, 54, 0.4) 50%, 
+        transparent 100%);
+    border-radius: 4px;
+    animation: pavingGlowRemote 3s ease-in-out infinite;
+}
+
+/* 施工设备 */
+.construction-equipment {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.excavator {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    width: 12px;
+    height: 8px;
+    background: #e53e3e;
+    border-radius: 2px;
+    animation: excavatorMove 8s ease-in-out infinite;
+}
+
+.excavator::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 2px;
+    width: 8px;
+    height: 3px;
+    background: #c53030;
+    border-radius: 1px;
+    animation: excavatorArm 4s ease-in-out infinite;
+}
+
+.truck {
+    position: absolute;
+    top: 65%;
+    right: 20%;
+    width: 10px;
+    height: 6px;
+    background: #3182ce;
+    border-radius: 2px;
+    animation: truckMove 12s ease-in-out infinite;
+}
+
+.truck::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 1px;
+    width: 6px;
+    height: 2px;
+    background: #2b6cb0;
+    border-radius: 1px;
+}
+
+/* 粒子效果 */
+.particles-remote {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.particle-remote {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #fbbf24;
+    border-radius: 50%;
+    animation: particleFloatRemote 4s ease-in-out infinite;
+}
+
+.particle-remote:nth-child(1) {
+    top: 30%;
+    left: 25%;
+    animation-delay: 0s;
+}
+
+.particle-remote:nth-child(2) {
+    top: 45%;
+    left: 35%;
+    animation-delay: 0.8s;
+}
+
+.particle-remote:nth-child(3) {
+    top: 55%;
+    left: 45%;
+    animation-delay: 1.6s;
+}
+
+.particle-remote:nth-child(4) {
+    top: 40%;
+    left: 55%;
+    animation-delay: 2.4s;
+}
+
+.particle-remote:nth-child(5) {
+    top: 50%;
+    left: 65%;
+    animation-delay: 3.2s;
+}
+
+.particle-remote:nth-child(6) {
+    top: 35%;
+    left: 75%;
+    animation-delay: 4s;
+}
+
+/* 场景灯光 */
+.scene-lights-remote {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.light-remote {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(251, 191, 36, 0.1) 0%, transparent 70%);
+    animation: lightPulseRemote 5s ease-in-out infinite;
+}
+
+.light-remote-1 {
+    top: 15%;
+    left: 15%;
+    animation-delay: 0s;
+}
+
+.light-remote-2 {
+    top: 55%;
+    right: 20%;
+    animation-delay: 2.5s;
+}
+
+/* 动画定义 */
+@keyframes machineMoveRemote {
+    0%, 100% { transform: translateY(-50%) scale(0.8) translateX(0); }
+    50% { transform: translateY(-50%) scale(0.8) translateX(15px); }
+}
+
+@keyframes engineGlowRemote {
+    0%, 100% { box-shadow: 0 0 5px rgba(229, 62, 62, 0.4); }
+    50% { box-shadow: 0 0 10px rgba(229, 62, 62, 0.7); }
+}
+
+@keyframes armSwingRemote {
+    0%, 100% { transform: rotateZ(0deg); }
+    50% { transform: rotateZ(10deg); }
+}
+
+@keyframes hopperVibrateRemote {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-1px); }
+}
+
+@keyframes asphaltFlowRemote {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+@keyframes pavingGlowRemote {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.7; }
+}
+
+@keyframes particleFloatRemote {
+    0%, 100% { 
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    25% { 
+        transform: translateY(-15px) translateX(8px);
+        opacity: 1;
+    }
+    50% { 
+        transform: translateY(-30px) translateX(-4px);
+        opacity: 0.7;
+    }
+    75% { 
+        transform: translateY(-45px) translateX(12px);
+        opacity: 0.3;
+    }
+}
+
+@keyframes lightPulseRemote {
+    0%, 100% { 
+        opacity: 0.1;
+        transform: scale(1);
+    }
+    50% { 
+        opacity: 0.3;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes riverFlow {
+    0%, 100% { 
+        background: linear-gradient(90deg, 
+            #1e3a8a 0%, 
+            #3b82f6 20%, 
+            #60a5fa 40%, 
+            #3b82f6 60%, 
+            #1e3a8a 80%, 
+            #1e40af 100%);
+    }
+    50% { 
+        background: linear-gradient(90deg, 
+            #1e40af 0%, 
+            #1e3a8a 20%, 
+            #3b82f6 40%, 
+            #60a5fa 60%, 
+            #3b82f6 80%, 
+            #1e3a8a 100%);
+    }
+}
+
+@keyframes towerLight {
+    0%, 100% { 
+        box-shadow: 0 0 5px rgba(251, 191, 36, 0.5);
+        opacity: 0.7;
+    }
+    50% { 
+        box-shadow: 0 0 15px rgba(251, 191, 36, 0.9);
+        opacity: 1;
+    }
+}
+
+@keyframes excavatorMove {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+}
+
+@keyframes excavatorArm {
+    0%, 100% { transform: rotateZ(0deg); }
+    50% { transform: rotateZ(15deg); }
+}
+
+@keyframes truckMove {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-15px); }
+}
+
+/* 响应式调整 */
+@media (max-width: 1200px) {
+    .paving-machine-remote {
+        transform: translateY(-50%) scale(0.6);
+    }
+    
+    .machine-body-remote {
+        width: 16px;
+        height: 10px;
+    }
+    
+    .machine-cabin-remote {
+        width: 6px;
+        height: 4px;
+    }
+}
+
+/* 静态遥感仿真样式 */
+.paving-static-panel {
+    position: relative;
+    width: 100%;
+    height: 229px;
+    display: flex;
+    flex-direction: row;
+    background: rgba(10,30,60,0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 30px #1e90ff44 inset;
+    overflow: hidden;
+}
+.data-panel {
+    width: 220px;
+    height: 100%;
+    background: linear-gradient(135deg, #0a2a4d 80%, #1e90ff33 100%);
+    border-right: 2px solid #1e90ff;
+    box-shadow: 2px 0 12px #1e90ff22;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 30px 18px 30px 0;
+    position: relative;
+    z-index: 2;
+}
+.data-title {
+    color: #00eaff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px #1e90ff88;
+}
+.data-item {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.data-label {
+    color: #b0e0ff;
+    font-size: 15px;
+    margin-right: 12px;
+    letter-spacing: 1px;
+}
+.data-value {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 6px #1e90ff99;
+}
+.map-area {
+    flex: 1;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.map-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.95) contrast(1.08) saturate(1.1);
+    border-radius: 0 10px 10px 0;
+}
+.road-highlight {
+    position: absolute;
+    left: 18%;
+    top: 60%;
+    width: 64%;
+    height: 8px;
+    background: linear-gradient(90deg, #00eaff 0%, #fff 50%, #00eaff 100%);
+    box-shadow: 0 0 18px 6px #00eaff99, 0 0 2px 1px #fff;
+    border-radius: 6px;
+    opacity: 0.85;
+    z-index: 2;
+    animation: roadFlow 2.5s linear infinite;
+}
+@keyframes roadFlow {
+    0% { filter: brightness(1.2); }
+    50% { filter: brightness(2); }
+    100% { filter: brightness(1.2); }
+}
+
+/* SVG遥感仿真+科技UI样式 */
+.paving-sim-panel {
+    position: relative;
+    width: 100%;
+    height: 229px;
+    display: flex;
+    flex-direction: row;
+    background: rgba(10,30,60,0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 30px #1e90ff44 inset;
+    overflow: hidden;
+}
+.sim-map-area {
+    flex: 1;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background: #0a1a2a;
+}
+.sim-map-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 24px #00eaff33 inset;
+}
+.sim-ui-border {
+    pointer-events: none;
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    border: 2px solid #00eaff;
+    border-radius: 10px;
+    box-shadow: 0 0 18px #00eaff55, 0 0 2px #fff;
+    z-index: 2;
+}
+.sim-bottom-data {
+    position: absolute;
+    left: 0; right: 0; bottom: 8px;
+    text-align: center;
+    color: #00eaff;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px #1e90ff88;
+    z-index: 3;
+    pointer-events: none;
+}
+
+/* 遥感底图+科技感UI样式 */
+.paving-remote-panel {
+    position: relative;
+    width: 100%;
+    height: 229px;
+    background: #0a1a2a;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #1e90ff44 inset;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.remote-map-area {
+    flex: 1;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.remote-map-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(1.05) contrast(1.12) saturate(1.1);
+}
+.remote-road-highlight {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+.remote-ui-border {
+    pointer-events: none;
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    border: 2px solid #00eaff;
+    border-radius: 10px;
+    box-shadow: 0 0 18px #00eaff55, 0 0 2px #fff;
+    z-index: 3;
+}
+.remote-bottom-data {
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px #1e90ff88;
+    font-weight: bold;
+}
+.remote-bottom-copyright {
+    margin-top: 2px;
+    text-align: center;
+    color: #b0e0ff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+.remote-bottom-copyright a {
+    color: #00eaff;
+    text-decoration: underline;
+}
+
+.remote-fake-bg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 24px #00eaff33 inset;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+
+.paving-3droad-panel {
+    position: relative;
+    width: 100%;
+    height: 229px;
+    background: linear-gradient(135deg, #181f2b 0%, #232b3a 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 30px #1e90ff44 inset;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.road3d-area {
+    flex: 1;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.road3d-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 24px #00eaff33 inset;
+    background: linear-gradient(135deg, #181f2b 0%, #232b3a 100%);
+}
+
+.bigscreen-mock {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    background: #0a1a2a;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #1e90ff44 inset;
+    overflow: hidden;
+}
+.mock-topbar {
+    position: absolute;
+    left: 0; top: 0; right: 0;
+    height: 32px;
+    background: linear-gradient(90deg, #1e90ff 0%, #0a1a2a 100%);
+    opacity: 0.85;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 2px 12px #00eaff44;
+    z-index: 10;
+}
+.mock-sidebar {
+    position: absolute;
+    left: 0; top: 32px; bottom: 32px;
+    width: 54px;
+    background: linear-gradient(180deg, #1e90ff 0%, #0a1a2a 100%);
+    opacity: 0.85;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 2px 0 12px #00eaff44;
+    z-index: 10;
+}
+.mock-bottombar {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 32px;
+    background: linear-gradient(90deg, #1e90ff 0%, #0a1a2a 100%);
+    opacity: 0.85;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 -2px 12px #00eaff44;
+    z-index: 10;
+}
+.mock-map-area {
+    position: absolute;
+    left: 54px; right: 0; top: 32px; bottom: 32px;
+    background: #181f2b;
+    border-radius: 0 0 10px 0;
+    overflow: hidden;
+    z-index: 1;
+}
+.mock-map-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 0 0 10px 0;
+    box-shadow: 0 0 24px #00eaff33 inset;
+    background: #181f2b;
+}
+.mock-map-border {
+    pointer-events: none;
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    border: 2px solid #00eaff;
+    border-radius: 0 0 10px 0;
+    box-shadow: 0 0 18px #00eaff55, 0 0 2px #fff;
+    z-index: 2;
+}
+
+.top-bar {
+  width: 100%;
+  height: 48px;
+  background: #151b2c;
+  border-bottom: 1.5px solid #2bb3ff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.bar-logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  border-radius: 6px;
+  background: #222;
+}
+
+.bar-title {
+  color: #3ec6ff;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 4px #1e90ff66;
+}
+
+.top-bar-menu {
+  display: flex;
+  align-items: center;
+  margin-left: 32px;
+  gap: 6px;
+}
+
+.bar-btn {
+  display: flex;
+  align-items: center;
+  background: #1a2240;
+  color: #3ec6ff;
+  border: 1.5px solid #2bb3ff;
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: 15px;
+  margin-right: 0;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: none;
+}
+
+.bar-btn .bar-icon {
+  margin-right: 4px;
+  font-size: 16px;
+}
+
+.bar-btn.active,
+.bar-btn:hover {
+  background: #2bb3ff;
+  color: #fff;
+}
+
+.arrow-btn {
+  font-size: 18px;
+  padding: 4px 10px;
+  background: #2bb3ff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  margin-left: 6px;
+}
+
+@media (max-width: 900px) {
+  #custom-top-bar {flex-wrap:wrap;height:auto;padding:8px 6px;}
+  #custom-top-bar > div, #custom-top-bar button {font-size:14px !important;}
+  #custom-top-bar button {padding:4px 8px !important;}
+}
+

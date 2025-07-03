@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>沥青路面智慧摊铺预控平台</title>
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/index.css"/>
+</head>
+<body>
+<div id="custom-top-bar" style="position:fixed;top:0;left:0;width:100%;height:56px;z-index:9999;background:linear-gradient(90deg,#1a2a3a 80%,#2e3e5e);box-shadow:0 2px 8px #0008;display:flex;align-items:center;padding:0 24px;font-family:'Microsoft YaHei',sans-serif;">
+  <div style="display:flex;align-items:center;font-size:20px;font-weight:bold;color:#4ecfff;margin-right:32px;">
+    <span style="display:inline-block;width:38px;height:38px;background:#4ecfff;border-radius:8px 0 8px 0;margin-right:10px;text-align:center;line-height:38px;color:#1a2a3a;font-size:28px;">➤</span>
+    沥青路面智慧摊铺预控平台
+  </div>
+  <div style="display:flex;gap:12px;">
+    <button style="background:#193a5a;border:none;border-radius:6px;padding:6px 18px;color:#fff;font-size:16px;display:flex;align-items:center;gap:6px;box-shadow:0 1px 4px #0004;cursor:pointer;">首页</button>
+    <button style="background:#193a5a;border:none;border-radius:6px;padding:6px 18px;color:#fff;font-size:16px;display:flex;align-items:center;gap:6px;box-shadow:0 1px 4px #0004;cursor:pointer;">基础档案</button>
+    <button style="background:#193a5a;border:none;border-radius:6px;padding:6px 18px;color:#fff;font-size:16px;display:flex;align-items:center;gap:6px;box-shadow:0 1px 4px #0004;cursor:pointer;">养护管理</button>
+    <button style="background:#193a5a;border:none;border-radius:6px;padding:6px 18px;color:#fff;font-size:16px;display:flex;align-items:center;gap:6px;box-shadow:0 1px 4px #0004;cursor:pointer;">查询预警</button>
+    <button style="background:#193a5a;border:none;border-radius:6px;padding:6px 18px;color:#fff;font-size:16px;display:flex;align-items:center;gap:6px;box-shadow:0 1px 4px #0004;cursor:pointer;">养护工程</button>
+    <button style="background:#193a5a;border:none;border-radius:6px;padding:6px 18px;color:#fff;font-size:16px;display:flex;align-items:center;gap:6px;box-shadow:0 1px 4px #0004;cursor:pointer;">管控动态</button>
+    <button style="background:#4ecfff;border:none;border-radius:6px;padding:6px 18px;color:#193a5a;font-size:18px;font-weight:bold;box-shadow:0 1px 4px #0004;cursor:pointer;margin-left:8px;">&gt;&gt;</button>
+  </div>
+  <div style="flex:1"></div>
+  <div style="color:#4ecfff;font-size:15px;margin-left:18px;">欢迎您，梅川酷子</div>
+</div>
+<script>document.body.style.paddingTop = '56px';</script>
+<!--头部-->
+<div class="header">
+    沥青路面智慧摊铺数据可视化
+    <a href="javascript:;" class="a-access">
+        <!-- <button class="button type1">
+    		返回
+    	</button> -->
+    </a>
+</div>
+<!--主体-->
+<div class="main clearfix">
+    <div class="main-left">
+        <div class="border-container">
+            <div class="name-title">历史数据查看</div>
+            <div id="graduateyear" style="height:280px;"></div>
+            <span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+        </div>
+        <div class="border-container">
+            <div class="name-title">摊铺轨迹监测</div>
+            <div class="radar-image-container" style="height:170px;display:flex;align-items:center;justify-content:center;background:#0a1a2a;border-radius:10px;">
+                <svg width="95%" height="200" viewBox="0 0 380 200" style="display:block;">
+                  <!-- 道路轮廓 - 两条平行直线 -->
+                  <path d="M5,195 L395,35" stroke="#444" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.5"/>
+                  <path d="M5,155 L350,15" stroke="#444" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.5"/>
+                  
+                  <!-- 道路中间区域 - 细线 -->
+                  <path d="M30,170 L350,40" stroke="#2a4a6b" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.4"/>
+                  
+                  <!-- 路径线 - 一条直线 -->
+                  <path d="M30,170 L350,40" stroke="#00eaff" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#glow)"/>
+                  <!-- 路径虚线 - 一条直线 -->
+                  <path d="M30,170 L350,40" stroke="#fff" stroke-width="1" fill="none" stroke-dasharray="8,8" opacity="0.5"/>
+                  
+                  <!-- 方向箭头 -->
+                  <defs>
+                    <marker id="arrowhead1" markerWidth="4" markerHeight="3" 
+                    refX="3" refY="1.5" orient="auto">
+                      <polygon points="0 0, 4 1.5, 0 3" fill="#00eaff" />
+                    </marker>
+                  </defs>
+                  
+                  <!-- 带箭头的路径线 - 一条直线 -->
+                  <path d="M30,170 L350,40" stroke="#00eaff" stroke-width="2" fill="none" 
+                        marker-end="url(#arrowhead1)" opacity="0.8"/>
+                  
+                  <!-- 当前点 - 移到行进线上 -->
+                  <circle cx="130" cy="130" r="13" fill="#ffb300" stroke="#fff" stroke-width="4"/>
+                  <circle cx="130" cy="130" r="6" fill="#e74c3c"/>
+                  
+                  <!-- 起点终点 -->
+                  <circle cx="30" cy="170" r="7" fill="#27ae60" stroke="#fff" stroke-width="2"/>
+                  <circle cx="350" cy="40" r="7" fill="#3498db" stroke="#fff" stroke-width="2"/>
+                  
+                  <!-- 标签 -->
+                  <text x="30" y="190" fill="#27ae60" font-size="14" font-weight="bold">起点</text>
+                  <text x="320" y="35" fill="#3498db" font-size="14" font-weight="bold">终点</text>
+                  
+                  <!-- 方向指示文字 -->
+                  <text x="190" y="105" fill="#00eaff" font-size="12" font-weight="bold">前进方向</text>
+                  
+                  <defs>
+                    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                      <feMerge>
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                      </feMerge>
+                    </filter>
+                  </defs>
+                </svg>
+            </div>
+            <div class="border-container">
+                <div class="name-title">推荐级配：级配1，STI=0.642907，轻度离析</div>
+                <div style="height:220px;display:flex;align-items:center;justify-content:center;background:#0a1a2a;border-radius:10px;">
+                    <img src="assets/Pictures/plot.png" alt="推荐级配" style="width:100%;height:100%;object-fit:cover;border-radius:4px;box-shadow:0 0 24px #00eaff33 inset;display:block;" />
+                </div>
+                <span class="top-left border-span"></span>
+                <span class="top-right border-span"></span>
+                <span class="bottom-left border-span"></span>
+                <span class="bottom-right border-span"></span>
+            </div>
+            <span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+        </div>
+        
+    </div>
+    <div class="main-middle">
+        <div class="border-container">
+            <div id="mapadd"></div>
+            <!-- <div class="number-show">
+                <ul>
+                    <li>
+                        <span class="span-name">摊铺温度</span>
+                    </li>
+                    <li>
+                        <span class="span-number-show">142°C</span>
+                    </li>
+                    <li>
+                        <span class="span-name">摊铺均匀性</span>
+                    </li>
+                    <li>
+                        <span class="span-number-show">96.8%</span>
+                    </li>
+                    <li>
+                        <span class="span-name">平整度</span>
+                    </li>
+                    <li>
+                        <span class="span-number-show">2.1mm</span>
+                    </li>
+                </ul>
+            </div> -->
+            <span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+        </div>
+        <div class="border-container">
+            <ul class="teacher-pie clearfix">
+                <li>
+                    <div class="name-title">摊铺均匀性结果</div>
+                    <div id="courserate"></div>
+                </li>
+                <li>
+                    <div class="name-title">设备状态监控</div>
+                    <div id="professionrate"></div>
+                </li>
+            </ul>
+
+            <div class="name-title construction-monitor-title">施工画面监控</div>
+            <div class="bigscreen-mock" style="height:100%;min-height:100px;display:flex;align-items:stretch;">
+                <img src="assets/Pictures/ggg.jpg" alt="实时数据监控" style="width:100%;height:100%;object-fit:cover;border-radius:10px;box-shadow:0 0 24px #00eaff33 inset;display:block;" />
+            </div>
+            <div class="remote-bottom-data">摊铺温度：147°C　行进速度：3.1km/h　摊铺均匀性：96.8%</div>
+            <span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+        </div>
+    </div>
+    <div class="main-right">
+        <div class="border-container">
+            <div class="name-title">实时数据监测</div>
+           <table class="table table-kingdargen">
+               <thead>
+                   <tr>
+                       <th>桩号</th>
+                       <th>摊铺温度(°C)</th>
+                       <th>行进速度(km/h)</th>
+                       <th>摊铺均匀性(%)</th>
+                       <th>状态</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td>001</td>
+                       <td>143</td>
+                       <td>7.2</td>
+                       <td>96.2</td>
+                       <td>正常</td>
+                   </tr>
+                   <tr>
+                       <td>002</td>
+                       <td>143</td>
+                       <td>12.8</td>
+                       <td>94.8</td>
+                       <td>正常</td>
+                   </tr>
+                   <tr>
+                       <td>003</td>
+                       <td>144</td>
+                       <td>4.6</td>
+                       <td>97.5</td>
+                       <td>正常</td>
+                   </tr>
+                   <tr>
+                       <td>004</td>
+                       <td>145</td>
+                       <td>9.1</td>
+                       <td>93.9</td>
+                       <td>正常</td>
+                   </tr>
+                   <tr>
+                       <td>005</td>
+                       <td>146</td>
+                       <td>6.7</td>
+                       <td>95.6</td>
+                       <td>正常</td>
+                   </tr>
+                   <tr>
+                       <td>006</td>
+                       <td>147</td>
+                       <td>14.3</td>
+                       <td>98.1</td>
+                       <td>正常</td>
+                   </tr>
+                   <tr>
+                       <td>007</td>
+                       <td>148</td>
+                       <td>3.8</td>
+                       <td>94.3</td>
+                       <td>正常</td>
+                   </tr>
+                   <tr>
+                       <td>008</td>
+                       <td>147</td>
+                       <td>11.5</td>
+                       <td>96.8</td>
+                       <td>正常</td>
+                   </tr>
+                   <tr>
+                       <td>009</td>
+                       <td>146</td>
+                       <td>8.9</td>
+                       <td>97.2</td>
+                       <td>正常</td>
+                   </tr>
+                   <tr>
+                       <td>010</td>
+                       <td>145</td>
+                       <td>5.4</td>
+                       <td>95.9</td>
+                       <td>正常</td>
+                   </tr>
+                   <tr>
+                       <td>011</td>
+                       <td>144</td>
+                       <td>13.7</td>
+                       <td>94.7</td>
+                       <td>正常</td>
+                   </tr>
+                   <tr>
+                       <td>012</td>
+                       <td>143</td>
+                       <td>2.1</td>
+                       <td>96.4</td>
+                       <td>正常</td>
+                   </tr>
+                   <tr>
+                       <td>013</td>
+                       <td>--</td>
+                       <td>--</td>
+                       <td>--</td>
+                       <td>维护</td>
+                   </tr>
+               </tbody>
+           </table>
+            <span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+        </div>
+        <div class="border-container">
+            <div class="name-title">施工进度监控</div>
+          <div id="juniorservice"></div>
+            <span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+        </div>
+        <div class="border-container">
+            <div class="name-title">质量评估分析</div>
+            <div id="edubalance"></div>
+            <span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+        </div>
+    </div>
+</div>
+ 
+	
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/echarts.min.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/map/shandong.js"></script>
+</html>
