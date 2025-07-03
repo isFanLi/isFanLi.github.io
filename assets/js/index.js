@@ -207,199 +207,7 @@ $(function(){
     };
     graduateyear.setOption(option);
 
-    /*==*/
-    // var sexrate = echarts.init(document.getElementById('sexrate'));
-    // var total = {
-    //     name: '=='
-    // };
-    // option = {
-    //     title: [{
-    //         text: total.name,
-    //         left: '48%',
-    //         top: '34%',
-    //         textAlign: 'center',
-    //         textBaseline: 'middle',
-    //         textStyle: {
-    //             color: '#fff',
-    //             fontWeight: 'normal',
-    //             fontSize: 18
-    //         }
-    //     }, {
-    //         text: total.value,
-    //         left: '48%',
-    //         top: '44%',
-    //         textAlign: 'center',
-    //         textBaseline: 'middle',
-    //         textStyle: {
-    //             color: '#fff',
-    //             fontWeight: 'normal',
-    //             fontSize: 18
-    //         }
-    //     }],
-    //     tooltip : {
-    //         trigger: 'item',
-    //         formatter: "{a} <br/>{b} : {c} ({d}%)"
-    //     },
-
-    //     color:['#70a3ff','#ff7f4e'],
-    //     legend: {
-    //         orient: 'vertical',
-    //         x:'center',
-    //         bottom:'5%',
-    //         selectedMode:false,
-    //         formatter:function(name){
-    //             var oa = option.series[0].data;
-    //             var num = oa[0].value + oa[1].value ;
-    //             for(var i = 0; i < option.series[0].data.length; i++){
-    //                 if(name==oa[i].name){
-    //                     return name + "  "+oa[i].value+"  "+ (oa[i].value / num * 100).toFixed(2) + '%';
-    //                 }
-    //             }
-    //         },
-    //         data: ['test1','test2'],
-    //         show:true,
-    //         textStyle:{
-    //             color:'#fff',
-    //             fontWeight:'bold'
-    //         },
-    //     },
-
-    //     series : [
-    //         {
-    //             name: 'PK',
-    //             type: 'pie',
-    //             selectedMode: 'single',
-    //             radius: ['45%', '55%'],
-    //             center: ['50%', '40%'],
-    //             data: [
-    //                 {value: 2629, name: 'test1'},
-    //                 {value: 2507, name: 'test2'}
-    //             ],
-    //             label: {
-    //                 normal: {
-    //                     show: false,
-    //                     position: "outer",
-    //                     align:'left',
-    //                     textStyle: {
-    //                         rotate:true
-    //                     }
-    //                 }
-    //             },
-    //             itemStyle: {
-    //                 emphasis: {
-    //                     shadowBlur: 10,
-    //                     shadowOffsetX: 0,
-    //                     shadowColor: 'rgba(0, 0, 0, 0.5)'
-    //                 },
-    //                 normal: {
-    //                     label:{
-    //                         show: true,
-    //                         formatter: '{b} {c}'
-    //                     }
-    //                 }
-
-    //             }
-    //         }
-    //     ]
-    // };
-    // sexrate.setOption(option);
- 
-    
-    // var householdrate = echarts.init(document.getElementById('householdrate'));
-    // var total = {
-    //     name: '=='
-    // };
-    // option = {
-    //     title: [{
-    //         text: total.name,
-    //         left: '48%',
-    //         top: '34%',
-    //         textAlign: 'center',
-    //         textBaseline: 'middle',
-    //         textStyle: {
-    //             color: '#fff',
-    //             fontWeight: 'normal',
-    //             fontSize: 18
-    //         }
-    //     }, {
-    //         text: total.value,
-    //         left: '48%',
-    //         top: '44%',
-    //         textAlign: 'center',
-    //         textBaseline: 'middle',
-    //         textStyle: {
-    //             color: '#fff',
-    //             fontWeight: 'normal',
-    //             fontSize: 18
-    //         }
-    //     }],
-    //     tooltip : {
-    //         trigger: 'item',
-    //         formatter: "{a} <br/>{b} : {c} ({d}%)"
-    //     },
-
-    //     color:['#4f9de7','#4acf79'],
-    //     legend: {
-    //         orient: 'vertical',
-    //         x:'center',
-    //         bottom:'5%',
-    //         selectedMode:false,
-    //         formatter:function(name){
-    //             var oa = option.series[0].data;
-    //             var num = oa[0].value + oa[1].value ;
-    //             for(var i = 0; i < option.series[0].data.length; i++){
-    //                 if(name==oa[i].name){
-    //                     return name + "  "+oa[i].value+"  "+ (oa[i].value / num * 100).toFixed(2) + '%';
-    //                 }
-    //             }
-    //         },
-    //         data: ['test1','test2'],
-    //         show:true,
-    //         textStyle:{
-    //             color:'#fff',
-    //             fontWeight:'bold'
-    //         },
-    //     },
-    //     series : [
-    //         {
-    //             name: 'FK',
-    //             type: 'pie',
-    //             selectedMode: 'single',
-    //             radius: ['45%', '55%'],
-    //             center: ['50%', '40%'],
-    //             data: [
-    //                 {value: 2629, name: 'test1'},
-    //                 {value: 2507, name: 'test2'}
-    //             ],
-    //             label: {
-    //                 normal: {
-    //                     show: false,
-    //                     position: "outer",
-    //                     align:'left',
-    //                     textStyle: {
-    //                         rotate:true
-    //                     }
-    //                 }
-    //             },
-    //             itemStyle: {
-    //                 emphasis: {
-    //                     shadowBlur: 10,
-    //                     shadowOffsetX: 0,
-    //                     shadowColor: 'rgba(0, 0, 0, 0.5)'
-    //                 },
-    //                 normal: {
-    //                     label:{
-    //                         show: true,
-    //                         formatter: '{b} {c}'
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     ]
-    // };
-    // householdrate.setOption(option);
    
-    /*  =====-=*/
     var courserate = echarts.init(document.getElementById('courserate'));
     option = {
         tooltip : {
@@ -433,10 +241,10 @@ $(function(){
                 color:['#27c2c1','#9ccb63','#fcd85a','#D2042D'],
                 center: ['38%', '50%'],
                 data:[
-                    {value:335, name:'优秀'},
-                    {value:310, name:'良好'},
-                    {value:110, name:'合格'},
-                    {value:30, name:'不合格'},
+                    {value:425, name:'优秀'},
+                    {value:110, name:'良好'},
+                    {value:50, name:'合格'},
+                    {value:15, name:'不合格'},
                 ],
                 itemStyle: {
                     emphasis: {
@@ -493,8 +301,8 @@ $(function(){
                 radius : '60%',
                 center: ['35%', '50%'],
                 data:[
-                    {value:335, name:'正常运行'},
-                    {value:10, name:'维护中'},
+                    {value:600, name:'正常运行'},
+                    {value:25, name:'维护中'},
                     {value:3, name:'故障'}
                 ],
                 itemStyle: {
